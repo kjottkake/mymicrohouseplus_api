@@ -19,7 +19,7 @@ app.use(cors());
 
 // GET route to send sensor data
 app.get('/weather', (req, res) => {
-    fs.readFile('data.json', 'utf8', (err, data) => {
+    fs.readFile('../mymicrohouseplus_api/data.json', 'utf8', (err, data) => {
         if (err) {
             console.error("Error reading file:", err);
             return res.status(500).send("Error reading sensor data");
