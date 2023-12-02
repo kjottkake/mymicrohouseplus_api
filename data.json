@@ -1,0 +1,33 @@
+{
+    "sensor_data": [
+      {
+        "timestamp": "2023-12-02T08:30:00",
+        "humidity_percentage": 45.5,
+        "temperature_celsius": 22.3,
+        "pressure_hpa": 1013.2,
+        "altitude_meters": 150.5
+      },
+      {
+        "timestamp": "2023-12-02T09:00:00",
+        "humidity_percentage": 46.2,
+        "temperature_celsius": 22.6,
+        "pressure_hpa": 1012.8,
+        "altitude_meters": 149.8
+      },
+      {
+        "timestamp": "2023-12-02T09:30:00",
+        "humidity_percentage": 45.8,
+        "temperature_celsius": 23.1,
+        "pressure_hpa": 1012.5,
+        "altitude_meters": 148.9
+      },
+      {
+        "timestamp": "2023-12-02T10:00:00",
+        "humidity_percentage": 45.2,
+        "temperature_celsius": 23.5,
+        "pressure_hpa": 1012.0,
+        "altitude_meters": 147.6
+      }
+    ]
+  }
+  
