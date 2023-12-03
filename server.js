@@ -35,6 +35,23 @@ app.get('/weather', (req, res) => {
     // res.json(sensorData);
 });
 
+app.get('/altitude', (req, res) =>{
+    fs.readFile('../mymicrohouseplus_sensor/altData.json', 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading file:", err);
+            return res.status(500).send("Error reading altitude data");
+        }
+        try {
+            const altData = JSON.parse(data);
+            res.json(altData);
+        } catch (parseErr) {
+            console.error("Error parsing JSON:", parseErr);
+            return res.status(500).send("Error parsing altitude data");
+        }
+    });
+    // res.json(sensorData);
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
